@@ -1,0 +1,182 @@
+// .header {
+//   grid-template-rows: auto auto;
+//   background-color: var(--background-main);
+//   grid-column: 1/13;
+// }
+
+.home-header {
+  background-color: var(--background-main);
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.home_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+
+  &_main {
+    grid-column: 2/8;
+    grid-row: 1/2;
+    z-index: 10;
+  }
+
+  &-logo {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+
+.header-heading {
+  grid-column: 3/8;
+  grid-row: 2/3;
+  margin-top: 11.5rem;
+
+  p {
+    margin-bottom: 7.2rem;
+    max-width: 46.5rem;
+  }
+
+  button {
+    margin-bottom: 5.4rem;
+  }
+}
+
+.header-image {
+  grid-column: 8/13;
+  grid-row: 1/3;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  z-index: 8;
+
+  img {
+    position: absolute;
+    bottom: -6px;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@include respond(1300) {
+  .home_nav {
+    margin: 2rem 0 0 8rem;
+
+    &_main {
+      grid-column: 1/9;
+    }
+  }
+
+  .header-heading {
+    grid-column: 2/8;
+    margin: 10rem 0 0 2rem;
+  }
+}
+
+@include respond(1100) {
+  .home_nav {
+    margin: 2rem 0rem 0;
+
+    &_main {
+      grid-column: 2/12;
+    }
+  }
+
+  .header-image {
+    grid-row: 2/3;
+
+    img {
+      max-width: 410px;
+    }
+  }
+}
+
+@include respond(950) {
+  .header-image {
+    grid-column: 7/13;
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+      // height: 100%;
+      // width: auto;
+      max-width: 350px;
+    }
+  }
+
+  .header-heading {
+    grid-column: 2/9;
+    z-index: 15;
+  }
+}
+
+@include respond(800) {
+  .mobile-nav {
+    display: block;
+  }
+
+  .home_nav {
+    display: none;
+    &_main {
+      grid-column: 1/5;
+      margin: 0 4rem;
+    }
+
+    &-logo {
+      height: 16rem;
+      width: 16rem;
+    }
+  }
+
+  .header-heading {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    margin: 8rem 0 0;
+    justify-self: center;
+
+    button {
+      margin-bottom: 10rem;
+    }
+  }
+
+  .header-image {
+    grid-column: 1/5;
+    grid-row: 3/4;
+
+    img {
+      position: absolute;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .header {
+    &-p {
+      font-size: calc(0.5vw + 2rem);
+    }
+  }
+}
+
+@include respond(500) {
+  .header-heading {
+    width: 95%;
+    p {
+      max-width: none;
+      font-size: calc(2vw + 1rem);
+      margin-bottom: 5rem;
+    }
+
+    button {
+      margin: 0 auto 6rem;
+    }
+  }
+
+  .header-image {
+    width: 98%;
+    margin: 0 auto;
+  }
+}

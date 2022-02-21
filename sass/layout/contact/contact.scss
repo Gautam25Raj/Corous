@@ -1,0 +1,47 @@
+.contacts {
+  grid-column: 2/12;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 7.5rem auto 0;
+
+  &_contact {
+    width: 40%;
+    // max-width: 65rem;
+  }
+
+  &-h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  &-h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  &-p {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@include respond(800) {
+  .contacts {
+    grid-column: 1/5;
+    width: 95%;
+
+    &_contact {
+      width: 45%;
+    }
+  }
+}
+
+@include respond(600) {
+  .contacts {
+    flex-direction: column;
+
+    &_contact {
+      width: 100%;
+    }
+  }
+}

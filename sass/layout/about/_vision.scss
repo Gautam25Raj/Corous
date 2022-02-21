@@ -1,0 +1,15 @@
+.vision {
+  text-align: center;
+  margin: 12rem auto 0;
+
+  h2 {
+    margin-bottom: 5rem;
+  }
+}
+
+@include respond(950) {
+  .vision {
+    width: 95%;
+    margin: 12rem auto 0;
+  }
+}

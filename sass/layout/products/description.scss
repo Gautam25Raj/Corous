@@ -1,0 +1,85 @@
+.products {
+  &-description {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto 10rem;
+    border-top: solid var(--product-line);
+
+    &-h3 {
+      color: #000;
+      display: inline-block;
+      border-top: solid var(--text-header);
+      margin-bottom: 5rem;
+    }
+
+    &-h4 {
+      margin-bottom: 3rem;
+    }
+
+    &-container:not(:last-child) {
+      margin-bottom: 8rem;
+    }
+
+    &-ingredient {
+      margin-bottom: 2rem;
+
+      &-list {
+        display: flex;
+
+        ul {
+          list-style: inside disc;
+          margin-left: 1rem;
+          width: 50%;
+        }
+
+        li:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    &-action {
+      margin-bottom: 2rem;
+
+      h5 {
+        margin-bottom: 1.5rem;
+      }
+
+      ul {
+        list-style: inside disc;
+      }
+
+      li {
+        margin-bottom: 0.4rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+@include respond(800) {
+  .products-description {
+    width: 95%;
+  }
+}
+
+@include respond(800) {
+  .products {
+    &-description {
+      &-ingredient {
+        margin-bottom: 2rem;
+
+        &-list {
+          flex-direction: column;
+
+          ul {
+            width: 95%;
+            &:last-child {
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

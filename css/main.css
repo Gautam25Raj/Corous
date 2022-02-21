@@ -1,0 +1,269 @@
+.home-header {
+  background-color: var(--background-main); }
+
+.mobile-nav {
+  display: none; }
+
+.home_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem; }
+  .home_nav_main {
+    grid-column: 2/8;
+    grid-row: 1/2;
+    z-index: 10; }
+  .home_nav-logo {
+    height: 15rem;
+    width: 15rem; }
+
+.header-heading {
+  grid-column: 3/8;
+  grid-row: 2/3;
+  margin-top: 11.5rem; }
+  .header-heading p {
+    margin-bottom: 7.2rem;
+    max-width: 46.5rem; }
+  .header-heading button {
+    margin-bottom: 5.4rem; }
+
+.header-image {
+  grid-column: 8/13;
+  grid-row: 1/3;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  z-index: 8; }
+  .header-image img {
+    position: absolute;
+    bottom: -6px;
+    height: 100%;
+    width: 100%; }
+
+@media only screen and (max-width: 1300px) {
+  .home_nav {
+    margin: 2rem 0 0 8rem; }
+    .home_nav_main {
+      grid-column: 1/9; }
+  .header-heading {
+    grid-column: 2/8;
+    margin: 10rem 0 0 2rem; } }
+
+@media only screen and (max-width: 1100px) {
+  .home_nav {
+    margin: 2rem 0rem 0; }
+    .home_nav_main {
+      grid-column: 2/12; }
+  .header-image {
+    grid-row: 2/3; }
+    .header-image img {
+      max-width: 410px; } }
+
+@media only screen and (max-width: 950px) {
+  .header-image {
+    grid-column: 7/13;
+    display: flex;
+    justify-content: flex-end; }
+    .header-image img {
+      max-width: 350px; }
+  .header-heading {
+    grid-column: 2/9;
+    z-index: 15; } }
+
+@media only screen and (max-width: 800px) {
+  .mobile-nav {
+    display: block; }
+  .home_nav {
+    display: none; }
+    .home_nav_main {
+      grid-column: 1/5;
+      margin: 0 4rem; }
+    .home_nav-logo {
+      height: 16rem;
+      width: 16rem; }
+  .header-heading {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    margin: 8rem 0 0;
+    justify-self: center; }
+    .header-heading button {
+      margin-bottom: 10rem; }
+  .header-image {
+    grid-column: 1/5;
+    grid-row: 3/4; }
+    .header-image img {
+      position: absolute;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%); }
+  .header-p {
+    font-size: calc(0.5vw + 2rem); } }
+
+@media only screen and (max-width: 500px) {
+  .header-heading {
+    width: 95%; }
+    .header-heading p {
+      max-width: none;
+      font-size: calc(2vw + 1rem);
+      margin-bottom: 5rem; }
+    .header-heading button {
+      margin: 0 auto 6rem; }
+  .header-image {
+    width: 98%;
+    margin: 0 auto; } }
+
+.color {
+  grid-column: 1/13;
+  z-index: -1;
+  background-color: var(--background-main); }
+  .color-1 {
+    grid-row: 1/2; }
+  .color-2 {
+    grid-row: 4/5; }
+
+.home-main-grid {
+  grid-template-rows: 145px auto auto; }
+
+.about {
+  grid-row: 1/3;
+  grid-column: 2/12;
+  border-radius: 50px;
+  padding: 6rem 8rem;
+  background-image: linear-gradient(rgba(251, 255, 242, 0.9) 100%, rgba(251, 255, 242, 0.9) 100%), url(../../img/home/medicine-background.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  z-index: 11; }
+  .about-head {
+    margin: 0 0 5rem 5rem; }
+  .about_details {
+    display: flex;
+    justify-content: space-between; }
+    .about_details-photo {
+      width: 40%; }
+    .about_details_container {
+      width: 51%; }
+    .about_details-paragraph {
+      line-height: 3.6rem; }
+  .about-btn {
+    margin-top: 6rem; }
+
+@media only screen and (max-width: 1400px) {
+  .about_details-paragraph {
+    font-size: 2.4rem; } }
+
+@media only screen and (max-width: 1300px) {
+  .about {
+    grid-column: 2/13;
+    padding: 5rem 6rem; }
+  .about_details-paragraph {
+    font-size: 2.4rem; }
+  .about_details_container {
+    width: 55%; } }
+
+@media only screen and (max-width: 1100px) {
+  .about {
+    grid-column: 2/12;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .about-head {
+      margin: 0 0 5rem; }
+    .about_details {
+      flex-direction: column;
+      align-items: center; }
+      .about_details-photo {
+        width: 50%;
+        margin-bottom: 8rem; }
+      .about_details_container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      .about_details-paragraph {
+        font-size: 2.4rem; } }
+
+@media only screen and (max-width: 800px) {
+  .color {
+    grid-column: 1/5; }
+  .about {
+    grid-column: 1/5;
+    width: 90%;
+    margin: 0 auto; }
+    .about_details-photo {
+      width: 60%; }
+    .about_details_container {
+      width: 100%; } }
+
+@media only screen and (max-width: 500px) {
+  .about {
+    width: 95%;
+    padding: 5rem 2rem;
+    background-size: 250%;
+    background-position: bottom center; }
+    .about_details-photo {
+      width: 95%; }
+    .about_details_container {
+      width: 100%; } }
+
+.products {
+  grid-row: 3/4;
+  grid-column: 1/13;
+  background-image: url(../../../img/product/background-svg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: translateY(-14.5rem); }
+  .products-h2 {
+    margin: 23.5rem 0 7rem; }
+  .products-btn {
+    margin: 6rem auto 0;
+    z-index: 99999; }
+
+.product_container {
+  width: 83.3%;
+  margin: 0 auto;
+  text-align: center; }
+
+.product {
+  background-color: var(--background-main);
+  padding: 30px 15px 20px;
+  border-radius: 20px;
+  flex-direction: column; }
+  .product-h3 {
+    margin-bottom: 10px; }
+  .product-p {
+    margin-bottom: 20px; }
+
+.product-background {
+  grid-row: 3/4; }
+
+@media only screen and (max-width: 1300px) {
+  .product-h3 {
+    font-size: 2.8rem; }
+  .product img {
+    width: 90%; } }
+
+@media only screen and (max-width: 1100px) {
+  .product-long img {
+    width: 70%; } }
+
+@media only screen and (max-width: 800px) {
+  .products {
+    grid-row: 3/4;
+    grid-column: 1/5;
+    padding: 20px 10px 10px; }
+    .products img {
+      width: 70%; }
+  .product_container {
+    width: 95%; } }
+
+@media only screen and (max-width: 500px) {
+  .products {
+    grid-row: 3/4;
+    grid-column: 1/5;
+    padding: 20px 10px 10px; }
+    .products img {
+      width: 70%; }
+  .product_container {
+    width: 95%; } }

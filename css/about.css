@@ -1,0 +1,183 @@
+:root {
+  --background-main: #e4f7b5;
+  --background-light: #fbfff2;
+  --background-mid: #c3ef79;
+  --background-dark: #baf05e;
+  --background-about-us: rgba(251, 255, 242, 0.1);
+  --text-header: #20026f;
+  --text-paragraph: #3b1997;
+  --box-shadow-container: 0 0 8px 2px rgba(0, 0, 0, 0.25);
+  --box-shadow-product: 4px 4px 4px 0 rgba(0, 0, 0, 0.25); }
+
+.about-header_container {
+  padding: 0 9rem 0 15rem;
+  margin: 5rem 0 7rem;
+  border-radius: 50px; }
+
+.about-header {
+  width: 70%;
+  margin: 7rem 0 5rem;
+  max-width: 90rem; }
+
+.about_img {
+  max-width: 300px;
+  width: 25%; }
+
+@media only screen and (max-width: 1300px) {
+  .about-header_container {
+    padding: 0 7rem 0 9rem; }
+  .about-header {
+    width: 78%;
+    max-width: 78rem; }
+  .about_img {
+    width: 22%; } }
+
+@media only screen and (max-width: 950px) {
+  .about-header_container {
+    padding: 0 5rem 0 7rem; }
+  .about-head {
+    font-size: 5rem; }
+  .about-header {
+    width: 78%;
+    max-width: 78rem; }
+  .about_img {
+    width: 22%; } }
+
+@media only screen and (max-width: 800px) {
+  .about-header_container {
+    padding: 0;
+    width: 95%;
+    margin: 5rem auto 7rem; }
+  .about-header {
+    width: 80%;
+    max-width: none; }
+  .about-head {
+    font-size: calc(4vw + 1rem);
+    margin-top: 2rem; }
+  .about_img {
+    order: -1;
+    margin-top: 5rem;
+    width: 40%;
+    max-width: 240px; } }
+
+@media only screen and (max-width: 500px) {
+  .about-header_container {
+    padding: 0;
+    width: 95%;
+    margin: 5rem auto 7rem; }
+  .about-header {
+    width: 95%;
+    max-width: none; }
+  .about-head {
+    font-size: calc(5vw + 1rem);
+    margin-top: 2rem; }
+  .about_img {
+    order: -1;
+    margin-top: 4rem;
+    width: 50%;
+    max-width: 240px; } }
+
+.about {
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto; }
+  .about_about-head {
+    margin-bottom: 5rem; }
+  .about_experiences {
+    justify-content: space-between;
+    width: 60%;
+    margin: 7rem auto 0; }
+  .about_experience-img {
+    width: 5.5rem;
+    height: 5.5rem;
+    margin: 0 auto; }
+  .about_experience-year {
+    margin: 1.8rem 0 0.8rem; }
+
+@media only screen and (max-width: 950px) {
+  .about_experiences {
+    width: 90%;
+    max-width: 525px; } }
+
+@media only screen and (max-width: 800px) {
+  .about {
+    width: 95%; } }
+
+@media only screen and (max-width: 500px) {
+  .about_experiences {
+    flex-direction: column;
+    margin: 2rem auto 0; }
+  .about_experience {
+    margin-top: 5rem; } }
+
+.mission {
+  text-align: center;
+  max-width: 1436px;
+  margin: 12rem auto 0; }
+  .mission_container {
+    margin: 6.5rem 0;
+    list-style: inside; }
+  .mission-missions {
+    text-align: left; }
+    .mission-missions:not(:last-child) {
+      margin-bottom: 2rem; }
+
+@media only screen and (max-width: 950px) {
+  .mission {
+    width: 95%; } }
+
+@media only screen and (max-width: 500px) {
+  .mission_container {
+    margin: 6.5rem 0 2rem; } }
+
+.grid-value {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15rem;
+  grid-row-gap: 6.2rem; }
+
+.value {
+  margin: 12rem 0 10rem;
+  text-align: center; }
+  .value_container {
+    width: 95%;
+    margin: 8rem auto 0;
+    max-width: 1400px;
+    align-content: center; }
+  .value-value {
+    justify-content: flex-start; }
+    .value-value-img {
+      width: 12rem;
+      height: 12rem;
+      margin-right: 4rem; }
+
+@media only screen and (max-width: 950px) {
+  .grid-value {
+    grid-column-gap: 12rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); } }
+
+@media only screen and (max-width: 500px) {
+  .grid-value {
+    grid-row-gap: 3rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr); }
+  .value {
+    text-align: center; }
+    .value_container {
+      width: 90%; }
+    .value-value-img {
+      width: 8rem;
+      height: 8rem; } }
+
+.vision {
+  text-align: center;
+  margin: 12rem auto 0; }
+  .vision h2 {
+    margin-bottom: 5rem; }
+
+@media only screen and (max-width: 950px) {
+  .vision {
+    width: 95%;
+    margin: 12rem auto 0; } }

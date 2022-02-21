@@ -1,0 +1,64 @@
+.social {
+  // height: 100vh;
+  grid-column: 1/2;
+  grid-row: 1/4;
+  // position: relative;
+  // z-index: 10;
+  // background-color: var(--background-main);
+
+  &_container {
+    width: 5rem;
+    height: 5rem;
+
+    &:not(:last-child) {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &-icon {
+    width: 5rem;
+    height: 5rem;
+    min-width: 40px;
+    min-height: 40px;
+  }
+}
+
+.socials {
+  position: fixed;
+  z-index: 999;
+  // left: 50%;
+  top: 50%;
+  // display: none;
+  transform: translateY(-50%);
+}
+
+@include respond(800) {
+  .socials {
+    position: absolute;
+    z-index: 999;
+    left: 50%;
+    top: 70%;
+    transform: translateY(0) translateX(150%);
+    display: flex;
+    transition: transform 0.5s ease-in;
+    display: none;
+  }
+
+  .social {
+    &_container {
+      margin: 0 3rem;
+    }
+
+    &-icon {
+      width: 7rem;
+      height: 7rem;
+      min-width: 40px;
+      min-height: 40px;
+    }
+  }
+}
+
+.open_socials {
+  transform: translateY(0) translateX(-50%);
+  display: flex;
+}

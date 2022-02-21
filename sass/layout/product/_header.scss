@@ -1,0 +1,162 @@
+.product_header {
+  // grid-column: 2/12;
+  // border-radius: 80px;
+  // display: flex;
+  // justify-content: space-between;
+  margin: 6rem 0 8rem 0;
+  padding: 9rem 5rem 5rem 8rem;
+  // box-shadow: var(--box-shadow-container);
+  // background-color: var(--background-light);
+}
+
+.product {
+  &-header {
+    width: 60%;
+    max-width: 70.6rem;
+  }
+
+  &-head {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+  }
+
+  &-paragraph {
+    max-width: 60rem;
+    margin-bottom: 4.6rem;
+  }
+
+  &-link {
+    font-size: 2.4rem;
+    text-decoration: underline;
+    color: var(--text-paragraph);
+  }
+
+  &_header-img {
+    width: 33%;
+    height: 100%;
+    position: relative;
+
+    img {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+
+@include respond(1300) {
+  .product_header {
+    // border-radius: 50px;
+    padding: 4rem 3rem 4rem 8rem;
+  }
+
+  .product {
+    &-header {
+      width: 60%;
+      max-width: 70rem;
+    }
+
+    &-head {
+      font-size: 5.6rem;
+    }
+
+    &-paragraph {
+      max-width: 50rem;
+
+      p {
+        font-size: 2.2rem;
+      }
+    }
+
+    &-link {
+      font-size: 2.3rem;
+    }
+
+    &_header-img {
+      width: 35%;
+      max-width: 315px;
+    }
+  }
+}
+
+@include respond(950) {
+  .product_header {
+    // border-radius: 30px;
+    padding: 4rem 3rem 3rem 4rem;
+  }
+
+  .product {
+    &_header-img {
+      width: 40%;
+      max-width: 280px;
+    }
+  }
+}
+
+@include respond(800) {
+  .product_header {
+    // grid-column: 1/5;
+    margin: 6rem 2rem 8rem;
+    // flex-direction: column;
+    // align-items: center;
+    padding: 0rem 0rem 5rem 0rem;
+  }
+
+  .product {
+    &-header {
+      width: 80%;
+      max-width: none;
+    }
+
+    &-head {
+      font-size: 6rem;
+    }
+
+    &-paragraph {
+      max-width: 60rem;
+
+      p {
+        font-size: 2.4rem;
+      }
+    }
+
+    &-link {
+      font-size: 2.4rem;
+    }
+
+    &_header-img {
+      width: 50%;
+      max-width: none;
+      min-width: 300px;
+      order: -1;
+      top: -10rem;
+
+      img {
+        position: relative;
+      }
+    }
+  }
+}
+
+@include respond(500) {
+  // .product_header {
+  //   box-shadow: none;
+  //   background-color: transparent;
+  // }
+
+  .product {
+    &-header {
+      width: 100%;
+      max-width: none;
+    }
+
+    &-head {
+      font-size: 5rem;
+    }
+
+    &-paragraph {
+      p {
+        font-size: 2.4rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.map {
+  grid-column: 2/12;
+  background-color: #fff;
+  margin: 10rem 0;
+}
+
+@include respond(800) {
+  .map {
+    grid-column: 1/5;
+    background-color: #fff;
+    margin: 10rem 0;
+  }
+}

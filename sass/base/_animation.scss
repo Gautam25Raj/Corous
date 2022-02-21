@@ -1,0 +1,14 @@
+@keyframes loader {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(40px);
+  }
+}
+
+@keyframes dots {
+  to {
+    width: 7.5rem;
+  }
+}

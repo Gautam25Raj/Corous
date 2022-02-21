@@ -1,0 +1,155 @@
+.color {
+  grid-column: 1/13;
+  z-index: -1;
+  background-color: var(--background-main);
+
+  &-1 {
+    grid-row: 1/2;
+  }
+
+  &-2 {
+    grid-row: 4/5;
+  }
+}
+
+.home-main-grid {
+  grid-template-rows: 145px auto auto;
+}
+
+.about {
+  grid-row: 1/3;
+  grid-column: 2/12;
+  border-radius: 50px;
+  padding: 6rem 8rem;
+  background-image: linear-gradient(
+      rgba(251, 255, 242, 0.9) 100%,
+      rgba(251, 255, 242, 0.9) 100%
+    ),
+    url(../../img/home/medicine-background.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  z-index: 11;
+
+  &-head {
+    margin: 0 0 5rem 5rem;
+  }
+
+  &_details {
+    display: flex;
+    justify-content: space-between;
+
+    &-photo {
+      width: 40%;
+    }
+
+    &_container {
+      width: 51%;
+      // margin-left: 13.5rem;
+    }
+
+    &-paragraph {
+      line-height: 3.6rem;
+    }
+  }
+
+  &-btn {
+    margin-top: 6rem;
+  }
+}
+
+@include respond(1400) {
+  .about_details-paragraph {
+    font-size: 2.4rem;
+  }
+}
+
+@include respond(1300) {
+  .about {
+    grid-column: 2/13;
+    padding: 5rem 6rem;
+  }
+
+  .about_details-paragraph {
+    font-size: 2.4rem;
+  }
+
+  .about_details_container {
+    width: 55%;
+  }
+}
+
+@include respond(1100) {
+  .about {
+    grid-column: 2/12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-head {
+      margin: 0 0 5rem;
+    }
+
+    &_details {
+      flex-direction: column;
+      align-items: center;
+
+      &-photo {
+        width: 50%;
+        margin-bottom: 8rem;
+      }
+
+      &_container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &-paragraph {
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
+
+@include respond(800) {
+  .color {
+    grid-column: 1/5;
+  }
+
+  .about {
+    grid-column: 1/5;
+    width: 90%;
+    margin: 0 auto;
+
+    &_details {
+      &-photo {
+        width: 60%;
+      }
+
+      &_container {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include respond(500) {
+  .about {
+    width: 95%;
+    padding: 5rem 2rem;
+    background-size: 250%;
+    background-position: bottom center;
+
+    &_details {
+      &-photo {
+        width: 95%;
+      }
+
+      &_container {
+        width: 100%;
+      }
+    }
+  }
+}

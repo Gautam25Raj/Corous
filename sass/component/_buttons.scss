@@ -1,0 +1,25 @@
+.btn {
+  font-size: 3rem;
+  border-radius: 100px;
+  padding: 1.6rem 3rem;
+  background-color: var(--background-dark);
+  border: none;
+  cursor: pointer;
+
+  &-arrow {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 2rem;
+  }
+}
+
+@include respond(500) {
+  .btn {
+    font-size: 2.6rem;
+
+    &-arrow {
+      width: 2.6rem;
+      height: 2.6rem;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "janpra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/main.css -w",
+    "about:sass": "node-sass sass/about.scss css/about.css -w",
+    "product:sass": "node-sass sass/product.scss css/product.css -w",
+    "contact:sass": "node-sass sass/contact.scss css/contact.css -w",
+    "common:sass": "node-sass sass/common.scss css/common.css -w",
+    "products:sass": "node-sass sass/products.scss css/products.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "about": "npm-run-all --parallel devserver about:sass",
+    "product": "npm-run-all --parallel devserver product:sass",
+    "contact": "npm-run-all --parallel devserver contact:sass",
+    "common": "npm-run-all --parallel devserver common:sass",
+    "concat:css": "concat -o css/main.css css/main.concat.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' css/main.common.css -o css/main.prefix.css",
+    "compress:css": "node-sass css/main.prefix.css css/common.css --output-main compressed",
+    "build:css": "npm-run-all prefix:css compress:css"
+  },
+  "author": "Gautam Raj",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "concat": "^1.0.3",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.2"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.1"
+  }
+}

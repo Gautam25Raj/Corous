@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local(''), url('../font/Arial.woff2') format('woff2'), url('../font/Arial.woff2') format('woff');
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  // scroll-behavior: smooth;
+  // cursor: default;
+}
+
+body {
+  font-family: 'Arial';
+  background-color: #fafafb;
+  justify-content: center;
+  background-color: #fffbf7;
+  // overflow: hidden;
+  // width: 100vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// .maximum-width {
+//   max-width: 1920px;
+//   // margin: 0 auto;
+// }
+
+@include respond(1700) {
+  html {
+    font-size: 56%;
+  }
+}
+
+@include respond(1550) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@include respond(1400) {
+  html {
+    font-size: 46.875%;
+  }
+}
+
+@include respond(1100) {
+  html {
+    font-size: 42%;
+  }
+}

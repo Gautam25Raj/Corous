@@ -1,0 +1,32 @@
+.mission {
+  text-align: center;
+  max-width: 1436px;
+  margin: 12rem auto 0;
+
+  &_container {
+    margin: 6.5rem 0;
+    list-style: inside;
+  }
+
+  &-missions {
+    text-align: left;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@include respond(950) {
+  .mission {
+    width: 95%;
+  }
+}
+
+@include respond(500) {
+  .mission {
+    &_container {
+      margin: 6.5rem 0 2rem;
+    }
+  }
+}

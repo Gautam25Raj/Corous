@@ -1,0 +1,88 @@
+.head {
+  &-h1 {
+    font-size: 7.2rem;
+    margin-bottom: 3rem;
+    color: var(--text-header);
+  }
+
+  &-h2 {
+    font-size: 5rem;
+    color: var(--text-header);
+  }
+
+  &-h3 {
+    font-size: 3rem;
+  }
+}
+
+.paragraph {
+  color: var(--text-paragraph);
+  font-size: 2.6rem;
+  font-style: normal;
+  letter-spacing: 1px;
+
+  &-bold {
+    font-weight: bold;
+  }
+
+  &-small {
+    font-size: 2.4rem;
+  }
+
+  &-med {
+    font-size: 2.8rem;
+  }
+
+  &-big {
+    font-size: 3rem;
+  }
+}
+
+@include respond(1300) {
+  .head {
+    &-h1 {
+      font-size: 6.8rem;
+    }
+  }
+
+  .paragraph {
+    font-size: 2.4rem;
+
+    &-small {
+      font-size: 2.4rem;
+    }
+
+    &-med {
+      font-size: 2.6rem;
+    }
+
+    &-big {
+      font-size: 2.8rem;
+    }
+  }
+}
+
+@include respond(950) {
+  .head {
+    &-h1 {
+      font-size: 6rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@include respond(800) {
+  .head {
+    &-h1 {
+      font-size: calc(4vw + 3rem);
+    }
+  }
+}
+
+@include respond(500) {
+  .head {
+    &-h1 {
+      font-size: calc(8vw + 0.6rem);
+    }
+  }
+}

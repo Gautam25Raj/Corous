@@ -1,0 +1,180 @@
+footer {
+  grid-row: 3/4;
+  grid-column: 1/13;
+  background-image: linear-gradient(
+    rgb(255, 255, 255) 0%,
+    rgb(228, 246, 181) 100%
+  );
+}
+
+.footer_details {
+  grid-column: 2/5;
+
+  &-logo {
+    margin: 4rem 0 5rem;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  &-address {
+    margin-bottom: 4.5rem;
+
+    &-head {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &-info {
+    img {
+      width: 2.6rem;
+      height: 2.6rem;
+      margin-right: 3rem;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.6rem;
+    }
+  }
+}
+
+.footer_nav {
+  grid-column: 6/10;
+  display: flex;
+  margin-top: 13rem;
+
+  &-head {
+    margin-bottom: 4rem;
+    letter-spacing: 0;
+  }
+
+  &-link {
+    margin-bottom: 2rem;
+    letter-spacing: 0;
+  }
+
+  ul {
+    width: 50%;
+  }
+}
+
+.footer_form {
+  grid-column: 10/13;
+  margin-top: 13rem;
+
+  &-head {
+    letter-spacing: 0;
+    margin-bottom: 25px;
+  }
+
+  &-form {
+    position: relative;
+
+    label {
+      position: absolute;
+      width: 2.8rem;
+      height: 2.8rem;
+      top: 50%;
+      left: 2.8rem;
+      transform: translateY(-50%);
+    }
+
+    input {
+      padding: 2.1rem 0 2.1rem 8.6rem;
+      width: 100%;
+      max-width: 38rem;
+      border-radius: 1rem;
+      font-size: 2.2rem;
+    }
+  }
+
+  &-btn {
+    margin-top: 2.5rem;
+    padding: 0.8rem 2rem;
+    font-size: 2.4rem;
+    border-radius: 1rem;
+    background-color: var(--background-dark);
+    outline: none;
+    border: 0;
+  }
+}
+
+.copyright {
+  background-color: var(--background-dark);
+  padding: 2.6rem 0;
+  margin-top: 2.4rem;
+  letter-spacing: 0;
+}
+
+@include respond(1300) {
+  .footer_form-form {
+    input {
+      max-width: 85%;
+      padding: 2rem 0 2rem 7rem;
+    }
+  }
+}
+
+@include respond(800) {
+  footer {
+    grid-row: 3/4;
+    grid-column: 1/5;
+  }
+
+  .footer_details {
+    width: 80%;
+    margin: 0 auto;
+    grid-column: 1/5;
+
+    &-logo {
+      width: 16rem;
+      height: 16rem;
+    }
+
+    &-address {
+      max-width: 400px;
+    }
+  }
+
+  .footer_nav {
+    grid-column: 1/3;
+    width: 80%;
+    margin: 13rem 0 0 auto;
+  }
+
+  .footer_form {
+    grid-column: 3/5;
+
+    &-form {
+      input {
+        max-width: 38rem;
+      }
+    }
+  }
+}
+
+@include respond(500) {
+  .footer_nav {
+    grid-column: 1/5;
+    width: 90%;
+    margin: 10rem 0 0 auto;
+  }
+
+  .footer_form {
+    margin: 10rem auto 3rem;
+    grid-column: 1/5;
+    width: 80%;
+
+    &-form {
+      input {
+        max-width: 38rem;
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    line-height: 3.2rem;
+  }
+}

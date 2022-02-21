@@ -1,0 +1,141 @@
+// .team {
+//   text-align: center;
+//   margin-top: 8rem;
+// }
+
+// .teams {
+//   display: flex;
+//   justify-content: space-evenly;
+
+//   &_container {
+//     position: relative;
+//     text-align: left;
+//     width: 30%;
+//     max-width: 400px;
+//     margin-top: 6rem;
+//     overflow: hidden;
+//   }
+
+//   &-detail {
+//     position: absolute;
+//     bottom: 1px;
+//     left: -0.2px;
+//     width: 80%;
+//     background-color: var(--background-main);
+//     padding: 2rem 1rem 1rem 4rem;
+
+//     &-head {
+//       font-size: 3rem;
+//     }
+
+//     &-paragraph {
+//       margin: 1rem 0 2rem;
+//     }
+
+//     &-social {
+//       display: flex;
+//       align-items: center;
+//       display: none;
+
+//       p {
+//         font-size: 2rem;
+//         margin-right: 1rem;
+//       }
+
+//       div {
+//         width: 5rem;
+//         height: 5rem;
+//         min-height: 45px;
+//         min-width: 45px;
+//         margin-right: 1rem;
+//       }
+//     }
+//   }
+
+//   &_container:hover {
+//     .teams-detail-social {
+//       display: flex;
+//     }
+//   }
+// }
+
+// @include respond(1550) {
+//   .teams {
+//     &-detail {
+//       &-social {
+//         div {
+//           min-height: 42px;
+//           min-width: 42px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @include respond(1300) {
+//   .teams {
+//     &-detail {
+//       &-social {
+//         div {
+//           min-height: 40px;
+//           min-width: 40px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @include respond(1100) {
+//   .teams {
+//     &-detail {
+//       &-social {
+//         div {
+//           min-height: 35px;
+//           min-width: 35px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @include respond(950) {
+//   .teams {
+//     &-detail {
+//       padding: 2rem 1rem 1rem 3rem;
+//       &-head {
+//         font-size: 2.8rem;
+//       }
+
+//       &-paragraph {
+//         font-size: 2.4rem;
+//       }
+
+//       &-social {
+//         div {
+//           min-height: 35px;
+//           min-width: 35px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @include respond(800) {
+//   .teams {
+//     &_container {
+//       width: 40%;
+//       max-width: 220px;
+//     }
+//   }
+// }
+
+// @include respond(500) {
+//   .teams {
+//     flex-direction: column;
+//     &_container {
+//       width: 85%;
+//       max-width: 260px;
+//       margin: 6rem auto 0;
+//     }
+//   }
+// }
