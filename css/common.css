@@ -1,15 +1,16 @@
 :root {
   --background-main: #fff2e4;
-  --background-light: #fff2e4;
+  --background-light: #fffbf7;
   --background-mid: #ffb15f;
   --background-dark: #faae60;
   --color-icon: #556577;
   --product-line: #cecece;
+  --product-background: #f5e1cc;
   --background-about-us: rgba(251, 255, 242, 0.1);
   --text-header: #556577;
   --text-paragraph: #3a5d85;
   --box-shadow-container: 0 0 8px 2px rgba(0, 0, 0, 0.25);
-  --box-shadow-product: 4px 4px 4px 0 rgba(0, 0, 0, 0.25); }
+  --box-shadow-product: 0px 0px 6px 0 rgba(0, 0, 0, 0.25); }
 
 .preload {
   position: fixed;
@@ -56,6 +57,14 @@
   to {
     width: 7.5rem; } }
 
+@keyframes rotatesX {
+  to {
+    transform: rotateX(360deg); } }
+
+@keyframes rotatesY {
+  to {
+    transform: rotateY(360deg); } }
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -78,9 +87,8 @@ html {
 
 body {
   font-family: 'Arial';
-  background-color: #fafafb;
   justify-content: center;
-  background-color: #fffbf7; }
+  background-color: #fff; }
 
 a {
   text-decoration: none; }
@@ -204,11 +212,17 @@ img {
   padding: 1.6rem 3rem;
   background-color: var(--background-dark);
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: 0.3s ease-in; }
   .btn-arrow {
     width: 3rem;
     height: 3rem;
     margin-left: 2rem; }
+
+.btn:hover {
+  animation-duration: 0.8s;
+  animation-name: rotatesY;
+  animation-iteration-count: 1; }
 
 @media only screen and (max-width: 500px) {
   .btn {
@@ -285,6 +299,10 @@ img {
     height: 5rem; }
     .social_container:not(:last-child) {
       margin-bottom: 2.4rem; }
+  .social_container:hover {
+    animation-duration: 1s;
+    animation-name: rotatesX;
+    animation-iteration-count: 1; }
   .social-icon {
     width: 5rem;
     height: 5rem;
@@ -322,7 +340,7 @@ img {
 footer {
   grid-row: 3/4;
   grid-column: 1/13;
-  background-image: linear-gradient(white 0%, #e4f6b5 100%); }
+  background-image: linear-gradient(#fff, var(--background-main)); }
 
 .footer_details {
   grid-column: 2/5; }
@@ -353,6 +371,8 @@ footer {
   .footer_nav-link {
     margin-bottom: 2rem;
     letter-spacing: 0; }
+  .footer_nav-link:hover a {
+    color: var(--background-dark); }
   .footer_nav ul {
     width: 50%; }
 
@@ -384,7 +404,10 @@ footer {
     border-radius: 1rem;
     background-color: var(--background-dark);
     outline: none;
-    border: 0; }
+    border: 0;
+    cursor: pointer; }
+  .footer_form-btn:hover {
+    transform: scale(1.1); }
 
 .copyright {
   background-color: var(--background-dark);
@@ -536,11 +559,6 @@ footer {
 
 .grid_container {
   grid-column: 2/12; }
-
-.box-container {
-  border-radius: 80px;
-  box-shadow: var(--box-shadow-container);
-  background-color: var(--background-light); }
 
 .header_container {
   display: flex;

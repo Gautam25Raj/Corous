@@ -1,10 +1,7 @@
 footer {
   grid-row: 3/4;
   grid-column: 1/13;
-  background-image: linear-gradient(
-    rgb(255, 255, 255) 0%,
-    rgb(228, 246, 181) 100%
-  );
+  background-image: linear-gradient(#fff, var(--background-main));
 }
 
 .footer_details {
@@ -54,6 +51,12 @@ footer {
     letter-spacing: 0;
   }
 
+  &-link:hover {
+    a {
+      color: var(--background-dark);
+    }
+  }
+
   ul {
     width: 50%;
   }
@@ -97,6 +100,11 @@ footer {
     background-color: var(--background-dark);
     outline: none;
     border: 0;
+    cursor: pointer;
+  }
+
+  &-btn:hover {
+    transform: scale(1.1);
   }
 }
 

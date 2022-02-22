@@ -12,3 +12,15 @@
     width: 7.5rem;
   }
 }
+
+@keyframes rotatesX {
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes rotatesY {
+  to {
+    transform: rotateY(360deg);
+  }
+}

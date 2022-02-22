@@ -1,12 +1,13 @@
 :root {
   --background-main: #fff2e4;
-  --background-light: #fff2e4;
+  --background-light: #fffbf7;
   --background-mid: #ffb15f;
   --background-dark: #faae60;
 
   --color-icon: #556577;
 
   --product-line: #cecece;
+  --product-background: #f5e1cc;
 
   --background-about-us: rgba(251, 255, 242, 0.1);
 
@@ -14,5 +15,5 @@
   --text-paragraph: #3a5d85;
 
   --box-shadow-container: 0 0 8px 2px rgba(0, 0, 0, 0.25);
-  --box-shadow-product: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  --box-shadow-product: 0px 0px 6px 0 rgba(0, 0, 0, 0.25);
 }

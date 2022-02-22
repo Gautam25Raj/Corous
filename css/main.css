@@ -129,7 +129,7 @@
   grid-column: 2/12;
   border-radius: 50px;
   padding: 6rem 8rem;
-  background-image: linear-gradient(rgba(251, 255, 242, 0.9) 100%, rgba(251, 255, 242, 0.9) 100%), url(../../img/home/medicine-background.png);
+  background-image: linear-gradient(rgba(255, 254, 253, 0.9), rgba(255, 254, 253, 0.9)), url(../../img/home/medicine-background.png);
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -209,11 +209,10 @@
 .products {
   grid-row: 3/4;
   grid-column: 1/13;
-  background-image: url(../../../img/product/background-svg.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  transform: translateY(-14.5rem); }
+  background-image: linear-gradient(#fff2e4, #fff);
+  transform: translateY(-14.5rem);
+  margin: 0;
+  padding: 0; }
   .products-h2 {
     margin: 23.5rem 0 7rem; }
   .products-btn {
@@ -224,29 +223,6 @@
   width: 83.3%;
   margin: 0 auto;
   text-align: center; }
-
-.product {
-  background-color: var(--background-main);
-  padding: 30px 15px 20px;
-  border-radius: 20px;
-  flex-direction: column; }
-  .product-h3 {
-    margin-bottom: 10px; }
-  .product-p {
-    margin-bottom: 20px; }
-
-.product-background {
-  grid-row: 3/4; }
-
-@media only screen and (max-width: 1300px) {
-  .product-h3 {
-    font-size: 2.8rem; }
-  .product img {
-    width: 90%; } }
-
-@media only screen and (max-width: 1100px) {
-  .product-long img {
-    width: 70%; } }
 
 @media only screen and (max-width: 800px) {
   .products {

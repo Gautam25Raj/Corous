@@ -15,6 +15,12 @@
     }
   }
 
+  &_container:hover {
+    animation-duration: 1s;
+    animation-name: rotatesX;
+    animation-iteration-count: 1;
+  }
+
   &-icon {
     width: 5rem;
     height: 5rem;
