@@ -1,3 +1,10 @@
+body {
+  background-image: url(../../img/about/about-background.svg);
+  background-size: contain;
+  background-position: 0rem 35rem;
+  background-repeat: no-repeat;
+}
+
 .about {
   &-header_container {
     padding: 0 9rem 0 15rem;

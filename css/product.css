@@ -96,12 +96,14 @@
 .product {
   width: 100%;
   border-radius: 40px;
-  box-shadow: var(--product-background);
+  box-shadow: var(--box-shadow-product);
   background-color: #fff; }
   .product-img {
     padding: 2rem 1.2rem;
     border-radius: 40px 40px 0 0;
     background-color: var(--background-main); }
+  .product:hover-img {
+    padding: 3rem 2.2rem; }
   .product_details {
     text-align: center;
     padding: 3rem 0;

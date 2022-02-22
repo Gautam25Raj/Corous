@@ -16,7 +16,7 @@
 .product {
   width: 100%;
   border-radius: 40px;
-  box-shadow: var(--product-background);
+  box-shadow: var(--box-shadow-product);
   background-color: #fff;
 
   &-img {
@@ -29,6 +29,12 @@
     //   margin-top: auto;
     // }
   }
+
+  &:hover {
+    &-img {
+      padding: 3rem 2.2rem;
+    }
+  } 
 
   &_details {
     // height: 34.3%;
