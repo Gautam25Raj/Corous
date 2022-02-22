@@ -1,6 +1,7 @@
 .product_header {
   margin: 6rem 0 8rem 0;
-  padding: 9rem 5rem 5rem 8rem; }
+  padding: 9rem 5rem 5rem 8rem;
+  color: var(--text-header); }
 
 .product-header {
   width: 60%;
@@ -95,7 +96,7 @@
 .product {
   width: 100%;
   border-radius: 40px;
-  box-shadow: var(--box-shadow-product);
+  box-shadow: var(--product-background);
   background-color: #fff; }
   .product-img {
     padding: 2rem 1.2rem;
