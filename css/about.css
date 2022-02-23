@@ -17,7 +17,10 @@ body {
 
 .about_img {
   max-width: 300px;
-  width: 25%; }
+  width: 25%;
+  animation-duration: 1.5s;
+  animation-name: scaleInfinite;
+  animation-iteration-count: infinite; }
 
 @media only screen and (max-width: 1300px) {
   .about-header_container {
@@ -146,7 +149,10 @@ body {
     .value-value-img {
       width: 10rem;
       height: 10rem;
-      margin-right: 4rem; }
+      margin-right: 4rem;
+      animation-duration: 1.5s;
+      animation-name: scaleInfinite;
+      animation-iteration-count: infinite; }
 
 @media only screen and (max-width: 950px) {
   .grid-value {

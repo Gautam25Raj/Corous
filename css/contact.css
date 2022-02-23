@@ -8,10 +8,12 @@
     width: 40%; }
   .contacts-h1 {
     font-size: 4rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    color: var(--text-header); }
   .contacts-h2 {
     font-size: 3rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    color: var(--text-header); }
   .contacts-p {
     margin-bottom: 2.5rem; }
 

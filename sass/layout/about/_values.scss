@@ -19,10 +19,14 @@
 
   &-value {
     justify-content: flex-start;
+
     &-img {
       width: 10rem;
       height: 10rem;
       margin-right: 4rem;
+      animation-duration: 1.5s;
+      animation-name: scaleInfinite;
+      animation-iteration-count: infinite;
     }
   }
 }

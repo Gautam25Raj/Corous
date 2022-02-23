@@ -22,6 +22,9 @@ body {
   &_img {
     max-width: 300px;
     width: 25%;
+    animation-duration: 1.5s;
+    animation-name: scaleInfinite;
+    animation-iteration-count: infinite;
   }
 }
 

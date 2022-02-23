@@ -2,11 +2,11 @@
     if(isset($_POST['name']) != ''){
         $email = $_POST["email"];
 
-        $email_from = "form@janprapharma.com";
+        $email_from = "form@corouslifesciences.com";
 
         $email_subject = "New Form Submission";
 
-        $to = "info@janpharma.com";
+        $to = "info@corouslifesciences.com";
     
         $body = "New Subscription: $emial\n";
     
@@ -21,11 +21,11 @@
         $email = $_POST["cEmail"];
         $message = $_POST["cMessage"];
 
-        $from_email = "form@janprapharma.com";
+        $from_email = "form@corouslifesciences.com";
 
         $subject = "New Form Submission";
 
-        $to = "info@janprapharma.com";
+        $to = "info@corouslifesciences.com";
     
         $body_form = "User Name: $name.\n"."User Email: $email.\n"."Message: $message";
 
