@@ -530,7 +530,7 @@ footer {
     width: 30px;
     height: 5px;
     margin: 5px;
-    background-color: #81c214;
+    background-color: var(--background-dark);
     transition: transform 0.3s ease-in; }
 
 .toggle .burger-line1 {
